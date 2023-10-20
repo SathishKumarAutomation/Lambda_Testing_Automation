@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Maven test" verbose="5" parallel="false" thread-count="5">
+	<!-- parallel value is true means multiple browsers open in same time and different @test test cases will execute -->
+	<!-- <parameter name="deviceHost" value="localhost" /> <parameter name="devicePort"	value="4444" /> -->
+	<parameter name="browserName" value="chrome" />
+	<parameter name="platform" value="windows 10" />
+	<parameter name="webSite" value="https://www.lambdatest.com" />
+	<parameter name="browserVersion" value="86.0" />
+	<test name="test">
+		<classes>
+			<class name="Org.LambdaTesting.Runner.LambdaRunnerClass"></class>
+		</classes>
+	</test>
+</suite>
